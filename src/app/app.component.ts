@@ -4,6 +4,7 @@ import { Quiz, Answers, Choice } from './quiz.model';
 
 @Component({
   selector: 'app-root',
+  template: '<router-outlet></router-outlet>',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
