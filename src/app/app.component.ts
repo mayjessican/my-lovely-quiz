@@ -15,25 +15,25 @@ export class AppComponent {
   currentQuestionIndex: number;
   private showResults = false;
 
-  constructor(private questionsService: QuestionsService ) {
-    this.questionsService.getJSON('maths').subscribe(data => {
+  // constructor(private questionsService: QuestionsService ) {
+  //   this.questionsService.getJSON('maths').subscribe(data => {
 
-      this.quiz = new Quiz('maths', data);
-      this.answers = new Answers();
-      this.currentQuestionIndex = 0;
-    });
-  }
+  //     this.quiz = new Quiz('maths', data);
+  //     this.answers = new Answers();
+  //     this.currentQuestionIndex = 0;
+  //   });
+  // }
 
-  updateChoice(choice: Choice) {
-    this.answers.values[this.currentQuestionIndex] = choice;
-  }
+  // updateChoice(choice: Choice) {
+  //   this.answers.values[this.currentQuestionIndex] = choice;
+  // }
 
-  nextOrViewResults() {
-    if (this.currentQuestionIndex === this.quiz.questions.length - 1) {
-      this.showResults = true;
-      return;
-    }
+  // nextOrViewResults() {
+  //   if (this.currentQuestionIndex === this.quiz.questions.length - 1) {
+  //     this.showResults = true;
+  //     return;
+  //   }
 
-    this.currentQuestionIndex++;
-  }
+  //   this.currentQuestionIndex++;
+  // }
 }

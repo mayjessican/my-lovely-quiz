@@ -12,15 +12,16 @@ export class QuestionsService {
   constructor(private http: HttpClient) { }
 
   public getQuizzes() {
-    return this.http.get(`./assets/quiz-list.json`).pipe(
+    return this.http.get(`https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple`).pipe(
       map((result: any[]) => {
-        return result.map(r => new Quiz(r.label, r.name, r.description, r.fileName));
+        // return result.map(r => new Quiz(r.label, r.name, r.description, r.fileName));
+        return result.map(r => new Quiz(r.label, r.name,));
       })
     );
   }
 
   public getQuestions(fileName: string) {
-    return this.http.get(`./assets/${fileName}.json`).pipe(
+    return this.http.get(`https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple`).pipe(
       map((result: any[]) => {
         return result.map(r => new Question(r.label, r.choices));
       })

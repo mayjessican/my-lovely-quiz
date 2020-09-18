@@ -1,31 +1,16 @@
-<div *ngIf="!quizList" class="spinner-grow text-primary"></div>
-<div *ngIf="quizList" class="container">
-  <h1 class="text-center mt-2"> Trivia Time!</h1>
-  <p class="text-center mb-3"> Pick a subject to get started!</p>
-  <small class="text-center d-block mb-2">Difficulty</small>
-  <div class="row">
-    <div class="col text-center mb-3">
-      <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-dark" id="dropdownBasic1" ngbDropdownToggle>{{difficulty}}</button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem (click)="difficulty='Easy'">Easy</button>
-          <button ngbDropdownItem (click)="difficulty='Medium'">Medium</button>
-          <button ngbDropdownItem (click)="difficulty='Hard'">Hard</button>
-        </div>
-      </div>
-    </div>
-  <div class="row justify-content-center">
-    <div class="col-xs-12 mx-2" *ngFor="let quizItem of quizList">
-      <div class="mb-2 card" style="width: 18rem; height: 10rem;">
-        <div class="card-body">
-          <h5 class="card-title">{{quizItem.name}}</h5>
-        </div>
-        <div  class="card-footer">
-          <button type="button" routerLink="/{{quizItem.label}}/{{difficulty.toLowerCase()}}" class="btn btn-dark d-block mx-auto">
-            Start!
-          </button>
-        </div>
-      </div>
+<div>
+    <mat-card color="primary">
+      <mat-card-title class="title"> Quizzes</mat-card-title>
+    </mat-card>
+    <div *ngFor="let q of quiz">
+      <mat-card>
+          <mat-card-title>{{q.label}}</mat-card-title>
+          <mat-card-subtitle>{{q.description}}</mat-card-subtitle>
+          <mat-card-actions>
+            <button mat-button color="secondary" class="btn btn-primary">
+              <a routerLink="/{{q.name}}" class="btn btn-primary">Select this quiz</a>
+            </button>
+          </mat-card-actions>
+      </mat-card>
     </div>
   </div>
-</div>

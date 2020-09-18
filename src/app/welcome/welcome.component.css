@@ -1,0 +1,11 @@
+  
+mat-card {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+  }
+
+.quiz-btn {
+    display: inline-block;
+    margin: 5px;
+}

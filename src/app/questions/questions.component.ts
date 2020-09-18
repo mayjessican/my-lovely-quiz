@@ -3,8 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 
 import { switchMap } from 'rxjs/operators';
 
-import { QuestionsService } from './questions.service';
-import { Quiz, Answers, Choice, Question } from './quiz.model';
+import { QuestionsService } from '../questions.service';
+import { Quiz, Answers, Choice, Question } from '../quiz.model';
 
 @Component({
   selector: 'app-questions',
@@ -18,10 +18,10 @@ export class QuestionsComponent implements OnInit {
   questions: Question[];
   currentQuestionIndex: number;
 
-  private showResults = false;
+  showResults = false;
 
   // inject both the active route and the questions service
-  constructor(private route: ActivatedRoute, private questionsService: QuestionsService) {}
+  constructor(private route: ActivatedRoute, public questionsService: QuestionsService) {}
 
   ngOnInit() {
 

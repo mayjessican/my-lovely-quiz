@@ -8,7 +8,7 @@ describe('WelcomeComponent', () => {
   let fixture: ComponentFixture<WelcomeComponent>;
 
   beforeEach(async(() => {
-    TestBed.configureTestingModule({
+     TestBed.configureTestingModule({
       declarations: [ WelcomeComponent ]
     })
     .compileComponents();
