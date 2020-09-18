@@ -11,5 +11,11 @@
       "name": "french",
       "description": "Questions about french",
       "fileName": "french.json"
+    },
+    {
+      "label": "General Knowledge",
+      "name": "general",
+      "description": "Questions about general knowledge",
+      "fileName": "general.json"
     }
   ]

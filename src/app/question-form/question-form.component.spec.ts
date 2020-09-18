@@ -7,7 +7,7 @@ describe('QuestionFormComponent', () => {
   let fixture: ComponentFixture<QuestionFormComponent>;
 
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
+    TestBed.configureTestingModule({
       declarations: [ QuestionFormComponent ]
     })
     .compileComponents();

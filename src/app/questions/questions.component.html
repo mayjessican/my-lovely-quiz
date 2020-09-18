@@ -1,8 +1,5 @@
 <div *ngIf="quiz && !questions" class="spinner-grow text-primary"></div>
-
-<mat-card *ngIf="questions"></mat-card>
-<!-- <div class="quiz" *ngIf="questions"> -->
-
+<mat-card *ngIf="questions">
   <div class="questions" *ngIf="!showResults">
     <app-question-form
       [question]="questions[currentQuestionIndex]"
@@ -19,4 +16,4 @@
   </div>
 
   <app-results *ngIf="showResults" [answers]="answers"></app-results>
-</div>
+</mat-card>

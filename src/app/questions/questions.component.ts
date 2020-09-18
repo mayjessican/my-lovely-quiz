@@ -9,7 +9,7 @@ import { Quiz, Answers, Choice, Question } from '../quiz.model';
 @Component({
   selector: 'app-questions',
   templateUrl: './questions.component.html',
-  styleUrls: ['./questions.component.scss']
+  styleUrls: ['./questions.component.css']
 })
 export class QuestionsComponent implements OnInit {
 
@@ -17,7 +17,6 @@ export class QuestionsComponent implements OnInit {
   answers: Answers;
   questions: Question[];
   currentQuestionIndex: number;
-
   showResults = false;
 
   // inject both the active route and the questions service

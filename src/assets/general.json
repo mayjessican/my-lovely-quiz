@@ -1,0 +1,149 @@
+[
+    {
+      "label": "Who invented the telephone?",
+      "choices": [
+        {
+          "value": "Einstein",
+          "correct": false
+        },
+        {
+          "value": "Bell",
+          "correct": true
+        },
+        {
+          "value": "Eddison",
+          "correct": false
+        },
+        {
+          "value": "Franklin",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "label": "Which nail grows fastest?",
+      "choices": [
+        {
+          "value": "Index",
+          "correct": false
+        },
+        {
+          "value": "Middle",
+          "correct": true
+        },
+        {
+          "value": "Ring",
+          "correct": false
+        },
+        {
+          "value": "Pinky",
+          "correct": false
+        }
+      ]
+    },
+    {
+        "label": "What temperature does water boil at?",
+        "choices": [
+          {
+            "value": "200C",
+            "correct": false
+          },
+          {
+            "value": "50C",
+            "correct": false
+          },
+          {
+            "value": "100C",
+            "correct": true
+          },
+          {
+            "value": "75C",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "label": "5. What artist said he would eat his wife when she died?",
+        "choices": [
+          {
+            "value": "Warhol",
+            "correct": false
+          },
+          {
+            "value": "Van Gogh",
+            "correct": true
+          },
+          {
+            "value": "Picasso",
+            "correct": false
+          },
+          {
+            "value": "Dali",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "label": "Who wrote Julius Caesar, Macbeth and Hamlet?",
+        "choices": [
+          {
+            "value": "Edgar Allen Poe",
+            "correct": false
+          },
+          {
+            "value": "William Shakespeare",
+            "correct": true
+          },
+          {
+            "value": "Charles Dickens",
+            "correct": false
+          },
+          {
+            "value": "J.R.R.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "label": "What did the crocodile swallow in Peter Pan?",
+        "choices": [
+          {
+            "value": "Shoe",
+            "correct": false
+          },
+          {
+            "value": "Treasure",
+            "correct": false
+          },
+          {
+            "value": "A Ring",
+            "correct": false
+          },
+          {
+            "value": "Alarm Clock",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "label": "Who did Lady Diana Spencer marry?",
+        "choices": [
+          {
+            "value": "Prince Charles",
+            "correct": true
+          },
+          {
+            "value": "Prince Andrew",
+            "correct": true
+          },
+          {
+            "value": "Prince Harry",
+            "correct": false
+          },
+          {
+            "value": "Prince William",
+            "correct": false
+          }
+        ]
+      }
+  ]

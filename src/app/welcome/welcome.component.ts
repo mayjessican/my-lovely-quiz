@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {QuestionsService} from '../questions.service';
+import { Quiz } from '../quiz.model'
 
 @Component({
   selector: 'app-welcome',
@@ -7,18 +8,17 @@ import {QuestionsService} from '../questions.service';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent implements OnInit {
-  quizList = [];
-  difficulty = 'Easy';
-  constructor(private questionsService: QuestionsService) {
-    this.questionsService.getQuizzes().subscribe(r => {
-      r.forEach((value, index) => {
-        this.quizList.push(r[index]);
-      });
-    });
+  quiz = [];
 
-  }
+  constructor(public questionsService: QuestionsService) { }
 
   ngOnInit() {
+    this.questionsService.getQuizzes().subscribe((quiz) => {
+        this.quiz= quiz
+      });
   }
 
+  reset(){
+    this.quiz=undefined
+  }
 }

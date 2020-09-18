@@ -1,0 +1,21 @@
+
+mat-card{
+  width: 75%
+}
+
+.mat-app-background{
+  background-color: #000057;
+}
+
+mat-card{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.title{
+  margin: auto;
+  background-color: #000057;
+  color: white;
+  font-size: small;
+}
