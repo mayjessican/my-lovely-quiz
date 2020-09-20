@@ -1,18 +1,18 @@
-body{
-  background-color: #E8F75F;
-}
-.answer{
+
+.answer {
   background-color: red;
   width: auto;
   font-size: 26px;
   text-align: center;
   margin: auto;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  padding: 5px;
+  line-height: 26px;
 }
 
 .correct{
-  background-color: #00FF00;
+  background-color: green;
 }
 
 .btn-primary{
@@ -28,7 +28,7 @@ mat-card{
 
 .title{
   margin: auto;
-  /* background-color: #000057; */
   color: white;
   font-size: 30px;
+  margin-bottom: 20px;
 }
