@@ -1,0 +1,27 @@
+.mat-app-background{
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .btn-primary{
+    background-color: grey;
+  }
+  
+  body{
+    background-color: grey;
+  }
+  
+  mat-card{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  
+  }
+  
+  .title{
+    padding: 2px;
+    /* margin: auto; */
+    /* background-color: #000057; */
+    color: white;
+    font-size: 40px;
+  }

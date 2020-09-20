@@ -1,9 +1,34 @@
-mat-card {
-  width: 75%;
-  margin: auto;
+body{
+  background-color: #E8F75F;
+}
+.answer{
+  background-color: red;
+  width: auto;
+  font-size: 26px;
   text-align: center;
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
-button {
+.correct{
+  background-color: #00FF00;
+}
+
+.btn-primary{
   background-color: white;
+}
+
+mat-card{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+
+}
+
+.title{
+  margin: auto;
+  /* background-color: #000057; */
+  color: white;
+  font-size: 30px;
 }
